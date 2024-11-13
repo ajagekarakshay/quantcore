@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Build
+build/
+.xmake
+
+# Added by cargo
+
+/target

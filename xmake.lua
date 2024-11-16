@@ -9,28 +9,26 @@ set_version("0.1.0")
 add_rules("mode.debug", "mode.release")
 set_languages("cxx17")
 
+-- Dependencies (moved to root scope)
+add_requires("armadillo")
+add_requires("fmt")
+add_requires("spdlog")
+add_requires("nlohmann_json")
+add_requires("gtest")
+
 -- Define the static library target
 target("quantcore")
     set_kind("static")
     
     -- Add source files (adjust path as needed)
-    add_files("src/**.cc")
-    add_headerfiles("src/**.h")
+    add_files("quantcore/**.cc")
+    add_headerfiles("quantcore/**.h")
+    add_includedirs("quantcore")
     
-    -- Dependencies
-    -- Armadillo (linear algebra library)
-    add_requires("armadillo")
+    -- Package references only (not requires)
     add_packages("armadillo")
-    
-    -- fmt (modern formatting library)
-    add_requires("fmt")
     add_packages("fmt")
-    
-    -- Other useful libraries
-    add_requires("spdlog") -- Logging library
     add_packages("spdlog")
-    
-    add_requires("nlohmann_json") -- JSON library
     add_packages("nlohmann_json")
 
     -- Compiler flags
@@ -57,7 +55,7 @@ target("tests")
     set_kind("binary")
     add_files("tests/**.cc")
     add_deps("quantcore")
-    
+    add_includedirs("quantcore")
     -- Add test framework
-    add_requires("gtest")
     add_packages("gtest")
+    add_includedirs(".")

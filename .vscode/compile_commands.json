@@ -1,21 +1,11 @@
 [
 {
   "directory": "/Users/akshay/Documents/GitHub/quantcore",
-  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-Isrc", "-isystem", "/Users/akshay/.xmake/packages/f/fmt/11.0.2/871df940863543fea595183887c1ce3e/include", "-isystem", "/Users/akshay/.xmake/packages/s/spdlog/v1.14.1/7785b376317b49808384a2771b1c040c/include", "-DNDEBUG", "-o", "build/.objs/quantcore/macosx/arm64/release/src/quantcore.cc.o", "src/quantcore.cc"],
-  "file": "src/quantcore.cc"
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-g", "-O0", "-std=c++17", "-Iquantcore", "-DDEBUG", "-DMACOS", "-isystem", "/opt/homebrew/Cellar/armadillo/14.0.3/include", "-isystem", "/opt/homebrew/Cellar/superlu/7.0.0/include", "-isystem", "/opt/homebrew/Cellar/openblas/0.3.28/include", "-isystem", "/Users/akshay/.xmake/packages/f/fmt/11.0.2/871df940863543fea595183887c1ce3e/include", "-isystem", "/Users/akshay/.xmake/packages/s/spdlog/v1.14.1/7785b376317b49808384a2771b1c040c/include", "-isystem", "/Users/akshay/.xmake/packages/n/nlohmann_json/v3.11.3/3ad40a5be1c943fd85cacabbe09b829a/include", "-o", "build/.objs/quantcore/macosx/arm64/debug/quantcore/time/unit.cc.o", "quantcore/time/unit.cc"],
+  "file": "quantcore/time/unit.cc"
 },
 {
   "directory": "/Users/akshay/Documents/GitHub/quantcore",
-  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-Isrc", "-isystem", "/Users/akshay/.xmake/packages/f/fmt/11.0.2/871df940863543fea595183887c1ce3e/include", "-isystem", "/Users/akshay/.xmake/packages/s/spdlog/v1.14.1/7785b376317b49808384a2771b1c040c/include", "-DNDEBUG", "-o", "build/.objs/quantcore/macosx/arm64/release/src/sub/func.cc.o", "src/sub/func.cc"],
-  "file": "src/sub/func.cc"
-},
-{
-  "directory": "/Users/akshay/Documents/GitHub/quantcore",
-  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-Isrc", "-isystem", "/Users/akshay/.xmake/packages/f/fmt/11.0.2/871df940863543fea595183887c1ce3e/include", "-isystem", "/Users/akshay/.xmake/packages/s/spdlog/v1.14.1/7785b376317b49808384a2771b1c040c/include", "-DNDEBUG", "-o", "build/.objs/quantcore/macosx/arm64/release/src/add/func2.cc.o", "src/add/func2.cc"],
-  "file": "src/add/func2.cc"
-},
-{
-  "directory": "/Users/akshay/Documents/GitHub/quantcore",
-  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-Isrc", "-isystem", "/Users/akshay/.xmake/packages/g/gtest/v1.15.2/b1d986ed9e4e4fad87d9ee0063ede5e8/include", "-DNDEBUG", "-o", "build/.objs/test/macosx/arm64/release/test/test_library.cc.o", "test/test_library.cc"],
-  "file": "test/test_library.cc"
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-g", "-O0", "-std=c++17", "-Iquantcore", "-I.", "-isystem", "/Users/akshay/.xmake/packages/g/gtest/v1.15.2/b1d986ed9e4e4fad87d9ee0063ede5e8/include", "-o", "build/.objs/tests/macosx/arm64/debug/tests/time/unit_test.cc.o", "tests/time/unit_test.cc"],
+  "file": "tests/time/unit_test.cc"
 }]

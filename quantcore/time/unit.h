@@ -5,8 +5,9 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <iostream>
 
-namespace quantcore::time
+namespace qc::time
 {
     std::chrono::time_point<std::chrono::system_clock> TimePoint();
 

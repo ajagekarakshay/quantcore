@@ -7,7 +7,7 @@ set_version("0.1.0")
 
 -- Set C++ standard and static library target
 add_rules("mode.debug", "mode.release")
-set_languages("cxx17")
+set_languages("cxx20")
 
 -- Dependencies (moved to root scope)
 add_requires("armadillo")

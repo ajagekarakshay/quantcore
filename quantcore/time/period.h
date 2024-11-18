@@ -4,7 +4,7 @@
 #include <cstdint>
 #include "time/unit.h"
 
-namespace quantcore::time
+namespace qc::time
 {
     using Day = std::chrono::duration<int64_t, std::ratio<86400>>;
     using Hour = std::chrono::duration<int64_t, std::ratio<3600>>;

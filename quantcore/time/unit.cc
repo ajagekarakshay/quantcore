@@ -1,6 +1,6 @@
 #include "unit.h"
 
-namespace quantcore::time
+namespace qc::time
 {
     std::chrono::time_point<std::chrono::system_clock> TimePoint()
     {

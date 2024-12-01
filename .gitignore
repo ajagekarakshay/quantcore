@@ -35,6 +35,13 @@
 build/
 .xmake
 
+# Rust generated files
+Cargo.lock
+target/
+**/*.rs.bk
+
+
+
 # Added by cargo
 
 /target
